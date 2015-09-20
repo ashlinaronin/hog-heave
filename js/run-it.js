@@ -131,7 +131,7 @@ $(document).ready(function() {
     $("#dice").empty();
 
     if (diceNumber === 1) {
-      $("#dice").append("<img class='center-block img-responsive pig-img animated tada' src='https://github.com/ashlinaronin/hog-heave/blob/master/img/dirty-pig.jpg'>");
+      $("#dice").append("<img class='center-block img-responsive pig-img animated tada' src='https://cdn.rawgit.com/ashlinaronin/hog-heave/master/img/dirty-pig.jpg'>");
     } else {
       $("#dice").append("<img class='center-block img-responsive dice-img animated flip' src='https://cdn.rawgit.com/ashlinaronin/hog-heave/master/img/dice/" + diceNumber + ".svg'>");
     }
