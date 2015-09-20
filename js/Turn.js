@@ -19,6 +19,7 @@ Turn.prototype.roll = function() {
   return newRoll;
 };
 
+
 // Add the score for this turn to its associated player and end this turn.
 Turn.prototype.pass = function() {
   this.player.totalScore += this.currentScore;

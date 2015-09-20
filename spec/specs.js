@@ -4,10 +4,6 @@ describe('Player', function() {
     expect(testPlayer.playerName).to.equal("Mrs. Piggy");
     expect(testPlayer.totalScore).to.equal(0);
   });
-
-  // current turn
-
-  // take turn
 });
 
 describe('Turn', function() {
@@ -52,31 +48,6 @@ describe('Game', function() {
     var testGame = new Game(testPlayer1, testPlayer2);
     expect(testGame.active).to.equal(true);
     });
+
+
 });
-
-describe('Game.run()', function() {
-  it("ends the game if a player has won", function() {
-    var testPlayer1 = new Player("Porker Posey");
-    var testPlayer2 = new Player("Mrs. Piggy");
-    var testGame = new Game(testPlayer1, testPlayer2);
-
-    // Hard-code a Mrs. Piggy win
-    testPlayer2.totalScore = 100;
-
-    testGame.run();
-    expect(testGame.active).to.equal(false);
-  });
-});
-
-// describe('Game.nextTurn()', function() {
-//   it("runs a turn and switches the current player", function() {
-//     var testPlayer1 = new Player("Porker Posey");
-//     var testPlayer2 = new Player("Mrs. Piggy");
-//     var testGame = new Game(testPlayer1, testPlayer2);
-//
-//     testGame.nextTurn();
-//
-//
-//
-//   });
-// });

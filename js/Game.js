@@ -11,7 +11,6 @@ function Game(player1, player2) {
 };
 
 
-// CHANGE THESE BACK TO 100!!!!!!
 Game.prototype.checkStatus = function() {
   if (this.player1.totalScore >= 100) {
       // player 1 wins, return that player so we can get access to him/her
@@ -34,6 +33,3 @@ Game.prototype.getNextTurn = function() {
 Game.prototype.switchPlayer = function() {
   this.currentPlayer = (this.currentPlayer != this.player1) ? this.player1 : this.player2;
 }
-
-
-// debugger;
