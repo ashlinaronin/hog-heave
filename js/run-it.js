@@ -131,9 +131,9 @@ $(document).ready(function() {
     $("#dice").empty();
 
     if (diceNumber === 1) {
-      $("#dice").append("<img class='center-block img-responsive pig-img animated tada' src='img/dirty-pig.jpg'>");
+      $("#dice").append("<img class='center-block img-responsive pig-img animated tada' src='https://raw.githubusercontent.com/ashlinaronin/hog-heave/master/img/dirty-pig.jpg'>");
     } else {
-      $("#dice").append("<img class='center-block img-responsive dice-img animated flip' src='img/dice/" + diceNumber + ".svg'>");
+      $("#dice").append("<img class='center-block img-responsive dice-img animated flip' src='https://raw.githubusercontent.com/ashlinaronin/hog-heave/master/img/dice/" + diceNumber + ".svg'>");
     }
   }
 
