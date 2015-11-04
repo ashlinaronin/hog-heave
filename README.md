@@ -13,10 +13,10 @@ $ python -m SimpleHTTPServer
 ```
 * Navigate to localhost:8000 in a browser of your choice and enjoy!
 
-The app should now be running on [localhost:5000](http://localhost:5000/).
+The app should now be running on [localhost:8000](http://localhost:8000/).
 
 ## Technologies Used
-Node, Express, Twit, JavaScript, JQuery, HTML, CSS & Bootstrap.
+JavaScript, jQuery, Animate.css, Mocha, Chai
 
 ## License
-MIT License, Copyright (c) 2015 Ashlin Aronin & Dimitrii Pokrovskii
+MIT License, Copyright (c) 2015 Ashlin Aronin & Alexandra Brown
