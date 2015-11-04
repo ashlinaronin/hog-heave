@@ -16,7 +16,7 @@ $ python -m SimpleHTTPServer
 The app should now be running on [localhost:8000](http://localhost:8000/).
 
 ## Technologies Used
-JavaScript, jQuery, Animate.css, Mocha, Chai
+JavaScript, jQuery, Bootstrap, Animate.css, Mocha, Chai
 
 ## License
 MIT License, Copyright (c) 2015 Ashlin Aronin & Alexandra Brown
