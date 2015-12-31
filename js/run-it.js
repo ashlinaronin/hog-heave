@@ -41,7 +41,7 @@ $(document).ready(function() {
     startGame();
   });
 
-  //Choose player 2
+  // Choose player 2
   $("#picker2-well img").click(function(event) {
     // Clear the other pig options and add this image to the well w/ animation
     $("#picker2-well").empty();
@@ -88,10 +88,8 @@ $(document).ready(function() {
 
       $("#game-in-progress").hide();
 
-
       $("#winner-name").text(player1.playerName);
       $("#bacon").hide().fadeIn("slow");
-
 
       // Hide buttons if someone has won
       $("#roll-btn").hide();
@@ -102,7 +100,6 @@ $(document).ready(function() {
 
       $("#winner-name").text(player2.playerName);
       $("#bacon").hide().fadeIn("slow");
-
 
       // Hide buttons if someone has won
       $("#roll-btn").hide();
@@ -143,7 +140,6 @@ $(document).ready(function() {
     var diceNumber = currentTurn.roll();
     animateDice(diceNumber);
 
-
     $("#current-score").text("turn score: " + currentTurn.currentScore);
 
     // If player rolled a 1, end the turn after 1 second and hide buttons.
@@ -161,12 +157,17 @@ $(document).ready(function() {
     currentTurn.pass();
     $("#dice").empty();
     endTurn();
-
   });
 
   // Re-start button onClick handler
   $("#restart-btn").click(function(event) {
     location.reload();
+  });
+
+
+  $('#hog-heave').click(function() {
+    console.log('u clicked me');
+    $('#instructions').toggle(400);
   });
 
 });

@@ -1,6 +1,4 @@
 body {
-  /*background: #F4A4B9; */
-  /*background: #DE6C83;*/
   background: #F4A4A4;
   font-family: "Montserrat";
   padding-top: 70px;
@@ -31,7 +29,6 @@ body {
 }
 
 .well {
-  /*background-color: #FFF7F8;*/
   background-image: url(../img/bacon-texture.png);
   opacity: 0.8;
 }
@@ -94,7 +91,6 @@ body {
 
 
 .navbar {
-    /*background: linear-gradient(to right, #D7BEA8, #DE6C83);*/
     background: linear-gradient(to right, #DFCBB9, #DE6C83);
     text-shadow: 2px 2px 2px #ffffff;
     border-color: transparent;
@@ -105,11 +101,20 @@ body {
     padding: 5px 10px 5px 10px;
     font-family: "Bangers";
     font-size: 50px;
-
+    cursor: pointer;
 }
 
 #pig-logo {
     width: 40px;
     height: 40px;
     display: inline;
+}
+
+#instructions {
+  display: none;
+  /*visibility: hidden;*/
+}
+
+#instructions a {
+  color: #777;
 }
