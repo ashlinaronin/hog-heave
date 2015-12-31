@@ -33,6 +33,33 @@ body {
   opacity: 0.8;
 }
 
+#picker1-well:after {
+  content: '1';
+  position: absolute;
+  font-size: 100px;
+  font-family: 'Bangers', sans-serif;
+  font-family: Arial, sans-serif;
+  top: 5px;
+  left: 14px;
+  /*transform: translateX(-50%);*/
+  opacity: 0.3;
+  line-height: 0.8;
+  pointer-events: none;
+}
+
+#picker2-well:after {
+  content: '2';
+  position: absolute;
+  font-size: 100px;
+  font-family: 'Bangers', sans-serif;
+  font-family: Arial, sans-serif;
+  top: 5px;
+  right: 18px;
+  /*transform: translateX(-50%);*/
+  opacity: 0.3;
+  line-height: 0.8;
+  pointer-events: none;
+}
 
 .dropshadow {
   height: auto;
