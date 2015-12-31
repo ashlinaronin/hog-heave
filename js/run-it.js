@@ -10,6 +10,15 @@ $(document).ready(function() {
   var startGame = function() {
     // Game shouldn't start until both players have chosen a character
     if (player1Chosen && player2Chosen) {
+      $('#pickyer').fadeOut();
+
+      // Smaller screens shouldn't display character images during game
+      if ($(window).innerWidth() < 640) {
+        $('#playerpickin').fadeOut();
+      }
+
+
+
       game = new Game(player1, player2);
 
       setTimeout(function() { $(".game").hide().fadeIn("slow"); }, 1000);
@@ -144,7 +153,12 @@ $(document).ready(function() {
 
     // If player rolled a 1, end the turn after 1 second and hide buttons.
     if (diceNumber === 1) {
-      $("#current-score").text("you dirty pig! you rolled in the mud...");
+
+      if ($(window).innerWidth() < 640) {
+        $("#current-score").text("you dirty pig!");
+      } else {
+        $("#current-score").text("you dirty pig! you rolled in the mud...");
+      }
       $("#pass-btn").hide();
       $("#roll-btn").hide();
       setTimeout(function() { endTurn() }, 2000);

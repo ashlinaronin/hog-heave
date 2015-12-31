@@ -1,14 +1,10 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/styles.css" type="text/css">
-        <link rel="stylesheet" href="css/animate.css" type="text/css">
-        <link href='https://fonts.googleapis.com/css?family=Bangers|Montserrat' rel='stylesheet' type='text/css'>
-        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="js/Player.js"></script>
-        <script src="js/Turn.js"></script>
-        <script src="js/Game.js"></script>
-        <script src="js/run-it.js"></script>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Bangers|Montserrat' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Hog Heave</title>
   </head>
   <body>
@@ -34,14 +30,13 @@
         is a classic dice game of the postwar era.</h3>
         <p>Two players compete to reach 50 points.</p>
         <p>
-          Each turn, roll the die repeatedly accruing as many points as you dare.
+          Each turn, roll the die repeatedly to accrue as many points as you dare.
         </p>
         <p>
 
         If you roll a 1, you 'roll in the mud' and lose all points from that turn.
 
-          To avoid rolling in the mud, 'pass' once you
-          have achieved what feels like a suitable score for that turn.
+          To avoid rolling in the mud, 'pass' once you've achieved what feels like a suitable score for that turn.
         </p>
         <p>
           Only you can develop the most effective strategy to trample your odious porcine adversary!
@@ -50,9 +45,9 @@
       </div>
 
       <div id="game-in-progress">
-        <h2 class="dropshadow marquee">Pick yer Piggy!</h2>
+        <h2 class="dropshadow marquee" id="pickyer">Pick yer Piggy!</h2>
 
-        <div class="row">
+        <div class="row" id="playerpickin">
           <div class="col-xs-6">
 
             <!-- piggy picker 1-->
@@ -140,5 +135,10 @@
 
 
     </div>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/Player.js"></script>
+    <script src="js/Turn.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/run-it.js"></script>
   </body>
 </html>
