@@ -17,12 +17,8 @@ $(document).ready(function() {
         $('#playerpickin').fadeOut();
       }
 
-
-
       game = new Game(player1, player2);
-
       setTimeout(function() { $(".game").hide().fadeIn("slow"); }, 1000);
-
       currentTurn = game.getNextTurn();
       showCurrentPlayer();
       updateScores();
@@ -180,7 +176,6 @@ $(document).ready(function() {
 
 
   $('#hog-heave').click(function() {
-    console.log('u clicked me');
     $('#instructions').toggle(400);
   });
 
